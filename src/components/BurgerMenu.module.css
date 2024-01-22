@@ -1,0 +1,40 @@
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.line {
+  height: 2px;
+  width: 30px;
+  background-color: #000;
+  margin: 6px 0;
+  transition:
+    transform 0.3s,
+    opacity 0.3s;
+}
+
+/* Initial state - Burger icon */
+.burger .line:nth-child(2) {
+  opacity: 1;
+}
+
+/* Initial state - Hidden lines for the X icon */
+.burger .line:nth-child(1),
+.burger .line:nth-child(3) {
+  opacity: 0;
+}
+
+/* Active state - X icon */
+.cross .line:nth-child(2) {
+  opacity: 0;
+}
+
+/* Active state - X icon lines rotation */
+.cross .line:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.cross .line:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}

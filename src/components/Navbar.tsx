@@ -1,4 +1,5 @@
 import { useState } from "react";
+import BurgerMenu from "./BurgerMenu";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -12,11 +13,8 @@ const Navbar = () => {
       <a href="/" className="mr-4 inline-flex items-center p-2">
         <span className="text-xl font-bold uppercase">Logo</span>
       </a>
-      <button className="group ml-auto p-3 md:hidden" onClick={toggleNav}>
-        <div className="relative top-0 mb-2 h-0.5 w-6 rounded-lg bg-black transition group-hover:bg-slate-500"></div>
-        <div className="relative top-0 mb-2 h-0.5 w-6 rounded-lg bg-black transition group-hover:bg-slate-500"></div>
-        <div className="relative top-0 h-0.5 w-6 rounded-lg bg-black transition group-hover:bg-slate-500"></div>
-      </button>
+      <BurgerMenu isNavOpen={isNavOpen} toggleNav={toggleNav} />
+
       <div
         className={`w-full md:inline-flex md:w-auto md:flex-grow ${
           isNavOpen ? "" : "hidden"
