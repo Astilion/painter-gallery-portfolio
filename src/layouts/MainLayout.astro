@@ -1,5 +1,5 @@
 ---
-import Navbar from '../components/Navbar.astro'
+import Navbar from '../components/Navbar.tsx'
 ---
 <html lang="en">
   <head>
@@ -11,7 +11,7 @@ import Navbar from '../components/Navbar.astro'
     <title>Gallery</title>
   </head>
   <body>
-    <Navbar />
+    <Navbar client:load />
   <slot />
   </body>
 </html>
