@@ -1,5 +1,9 @@
 import styles from "./BurgerMenu.module.css";
-const BurgerMenu = ({ isNavOpen, toggleNav }) => {
+interface BurgerMenuProps {
+  isNavOpen: boolean;
+  toggleNav: () => void;
+}
+const BurgerMenu = ({ isNavOpen, toggleNav }:BurgerMenuProps) => {
   return (
     <button
       className={`group ml-auto p-3 md:hidden ${isNavOpen ? styles.cross : styles.burger}`}
