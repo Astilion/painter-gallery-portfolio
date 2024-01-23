@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="flex flex-wrap items-center bg-slate-200 p-3">
       <a href="/" className="mr-4 inline-flex items-center p-2">
-        <span className="text-xl font-bold uppercase">Logo</span>
+        <span className="font-heading text-3xl font-bold ">Logo</span>
       </a>
       <BurgerMenu isNavOpen={isNavOpen} toggleNav={toggleNav} />
 
