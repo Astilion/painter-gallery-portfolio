@@ -16,9 +16,7 @@ const Navbar = () => {
       <BurgerMenu isNavOpen={isNavOpen} toggleNav={toggleNav} />
 
       <div
-        className={`w-full md:inline-flex md:w-auto md:flex-grow ${
-          isNavOpen ? "" : "hidden"
-        }`}
+        className={`w-full md:inline-flex md:w-auto md:flex-grow  ${isNavOpen ? "" : "hidden"}`}
       >
         <div className="flex w-full flex-col items-start md:ml-auto md:inline-flex md:h-auto md:w-auto md:flex-row md:items-center">
           <a
