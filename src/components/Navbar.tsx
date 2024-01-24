@@ -27,7 +27,7 @@ const Navbar = () => {
           </a>
 
           <a
-            href="/"
+            href="#about"
             className="w-full items-center justify-center rounded px-3 py-2 text-center transition hover:bg-gray-700 hover:text-white md:inline-flex md:w-auto"
           >
             <span>O mnie</span>
