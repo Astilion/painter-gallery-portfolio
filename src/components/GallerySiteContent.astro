@@ -1,21 +1,33 @@
 ---
-import Picture from "./Picture.astro"
+import Picture from "./Picture.astro";
 ---
 
-<main class="bg-slate-100 py-8">
-  <h2 class="font bold mb-4 text-center font-heading text-4xl">Galeria</h2>
-  <div class="img-container flex flex-wrap items-center justify-center gap-x-4">
-    <Picture/>
-    <Picture/>
-    <Picture/>
-    <Picture/>
-    <Picture/>
-    <Picture/>
-    <Picture/>
-    <Picture/>
-    <Picture/>
-    <Picture/>
-    <Picture/>
-    <Picture/>
-  </div>
-</main>
+<script is:inline>
+  const showDialog = () => {
+    let dialog = document.getElementById("dialog");
+    dialog?.classList.remove("hidden");
+    dialog?.classList.add("opacity-100");
+  };
+
+  const hideDialog = () => {
+    let dialog = document.getElementById("dialog");
+    dialog?.classList.remove("opacity-100");
+    dialog?.classList.add("hidden");
+  };
+</script>
+<main class="my-8"></main>
+<h2 class="font bold mb-4 text-center font-heading text-4xl">Galeria</h2>
+<div class="img-container flex flex-wrap items-center justify-center gap-x-4">
+  <Picture />
+  <Picture />
+  <Picture />
+  <Picture />
+  <Picture />
+  <Picture />
+  <Picture />
+  <Picture />
+  <Picture />
+  <Picture />
+  <Picture />
+  <Picture />
+</div>
